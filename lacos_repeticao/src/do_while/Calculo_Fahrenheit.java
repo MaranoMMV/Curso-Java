@@ -8,9 +8,7 @@ public class Calculo_Fahrenheit {
 		Scanner scan = new Scanner(System.in);
 		
 		float fahrenheit;
-		String resposta = "";
-		
-
+		char resposta;
 		
 		while (resposta != "n") {
 			System.out.println("Digite a temperatura em Celsius");
@@ -18,7 +16,7 @@ public class Calculo_Fahrenheit {
 			fahrenheit = (float) (((9.0 * celsius)/5) + 32.0);
 			System.out.println(fahrenheit);
 			System.out.println("Quer repetir a operação?");
-			resposta = scan.next();
+			resposta = scan.next().charAt(0);
 		}
 		System.out.println("É Tetraa");
 	}
